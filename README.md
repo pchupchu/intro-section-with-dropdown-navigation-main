@@ -1,9 +1,8 @@
-# Frontend Mentor - Fylo dark theme landing page
+# Frontend Mentor - Intro section with dropdown navigation
 
-![Design preview for the Fylo dark theme landing page challenge](./src/design/desktop-preview.jpg
-)
+![Design preview for the Intro section with dropdown navigation coding challenge](./src/design/desktop-preview.jpg)
 
-This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -31,4 +30,3 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 ## Author
 
 - Frontend Mentor - [@pchupchu](https://www.frontendmentor.io/profile/pchupchu)
-

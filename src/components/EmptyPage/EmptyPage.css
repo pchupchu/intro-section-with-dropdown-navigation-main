@@ -1,0 +1,9 @@
+.empty-page {
+  margin: 0 auto;
+  font-size: 74px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
