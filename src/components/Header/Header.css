@@ -9,11 +9,11 @@
   position: relative;
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   .header {
-    padding: 50px 40px;
+    padding: 21px 40px 67px;
   }
-} */
+}
 
 .header__logo {
   width: 87px;

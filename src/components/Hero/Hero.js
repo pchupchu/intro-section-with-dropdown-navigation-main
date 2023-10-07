@@ -17,16 +17,32 @@ function Hero() {
         <button className="hero__button">Learn more</button>
         <ul className="hero__clients">
           <li>
-            <img className="hero__client" src={databiz} alt="databiz" />
+            <img
+              className="hero__client hero__client_databiz"
+              src={databiz}
+              alt="databiz"
+            />
           </li>
           <li>
-            <img className="hero__client" src={audiophile} alt="audiophile" />
+            <img
+              className="hero__client hero__client_audiophile"
+              src={audiophile}
+              alt="audiophile"
+            />
           </li>
           <li>
-            <img className="hero__client" src={meet} alt="meet" />
+            <img
+              className="hero__client hero__client_meet"
+              src={meet}
+              alt="meet"
+            />
           </li>
           <li>
-            <img className="hero__client" src={maker} alt="maker" />
+            <img
+              className="hero__client hero__client_maker"
+              src={maker}
+              alt="maker"
+            />
           </li>
         </ul>
       </div>
