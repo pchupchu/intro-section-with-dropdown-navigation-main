@@ -7,7 +7,6 @@ import maker from "../../images/client-maker.svg";
 function Hero() {
   return (
     <div className="hero">
-      <div className="hero__image"></div>
       <div className="hero__container">
         <h1 className="hero__title">Make remote work</h1>
         <p className="hero__text">
@@ -46,6 +45,7 @@ function Hero() {
           </li>
         </ul>
       </div>
+      <div className="hero__image"></div>
     </div>
   );
 }

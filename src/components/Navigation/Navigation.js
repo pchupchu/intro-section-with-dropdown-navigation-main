@@ -1,12 +1,26 @@
 import { Link } from "react-router-dom";
 import "./Navigation.css";
+import Features from "../Features/Features";
+import Company from "../Company/Company";
 
-function Navigation() {
+function Navigation({ isOpen, onOpen, onOptionClick }) {
   return (
     <nav className="navigation">
       <ul className="navigation__menu">
-        <li className="navigation__item">Features</li>
-        <li className="navigation__item">Company</li>
+        <li className="navigation__item">
+          <Features
+            isOpen={isOpen}
+            onOpen={onOpen}
+            onOptionClick={onOptionClick}
+          />
+        </li>
+        <li className="navigation__item">
+          <Company
+            isOpen={isOpen}
+            onOpen={onOpen}
+            onOptionClick={onOptionClick}
+          />
+        </li>
         <li className="navigation__item">
           <Link to="/careers" className="navigation__link">
             Careers
