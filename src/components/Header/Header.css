@@ -17,15 +17,18 @@
 
 .header__logo {
   width: 87px;
-  height: 35px;
+  height: 32px;
 }
 
-/* @media screen and (min-width: 768px) {
-  .header__logo {
-    width: 35px;
-    height: 40px;
+.header__navigation {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header__navigation {
+    display: flex;
   }
-} */
+}
 
 .header__burger {
   background-image: url('../../images/icon-menu.svg');

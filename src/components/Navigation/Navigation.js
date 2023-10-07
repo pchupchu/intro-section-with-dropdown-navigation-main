@@ -5,7 +5,7 @@ import Company from "../Company/Company";
 
 function Navigation({ isOpen, onOpen, onOptionClick }) {
   return (
-    <nav className="navigation">
+    <>
       <ul className="navigation__menu">
         <li className="navigation__item">
           <Features
@@ -33,17 +33,17 @@ function Navigation({ isOpen, onOpen, onOptionClick }) {
         </li>
       </ul>
       <div className="navigation__links">
-        <Link to="/signin" className="navigation__link">
+        <Link to="/signin" className="navigation__auth-link">
           Login
         </Link>
         <Link
           to="/signup"
-          className="navigation__link navigation__link_sign-up"
+          className="navigation__auth-link navigation__auth-link_register"
         >
           Register
         </Link>
       </div>
-    </nav>
+    </>
   );
 }
 

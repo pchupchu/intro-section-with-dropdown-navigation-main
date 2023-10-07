@@ -1,13 +1,7 @@
+import Option from "../Option/Option";
 import "./DropDown.css";
 
-const Dropdown = ({
-  title,
-  itemClassname,
-  options,
-  isOpen,
-  onOpen,
-  onOptionClick,
-}) => {
+const Dropdown = ({ title, options, isOpen, onOpen, onOptionClick }) => {
   return (
     <div className="dropdown">
       <p className="dropdown__header" onClick={onOpen}>
@@ -15,15 +9,29 @@ const Dropdown = ({
       </p>
       {isOpen && (
         <ul className="dropdown__options">
-          {options.map((option, index) => (
-            <li
-              key={index}
-              className={`dropdown__option ${itemClassname}`}
-              onClick={() => onOptionClick(option)}
-            >
-              {option}
-            </li>
-          ))}
+          {options.map(
+            (option) => {
+              return (
+                <Option
+                  key={option.id}
+                  title={option.title}
+                  image={option.image}
+                  itemClassname={option.itemClassname}
+                  link={option.link}
+                  onClick={() => onOptionClick(option)}
+                />
+              );
+            }
+
+            //   (<li
+            //     key={index}
+            //     className={`dropdown__option ${itemClassname}`}
+            //     onClick={() => onOptionClick(option)}
+            //   >
+            //     {option}
+            //   </li>
+            // )
+          )}
         </ul>
       )}
     </div>

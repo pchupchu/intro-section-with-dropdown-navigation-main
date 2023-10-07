@@ -1,0 +1,26 @@
+.option__link {
+  cursor: pointer;
+  color: var(--medium-grey);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .option__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.option__link:hover {
+  color: var(--black);
+}
+
+.option__link_features {
+  padding-left: 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+}

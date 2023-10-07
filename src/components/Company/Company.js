@@ -1,13 +1,13 @@
 import "./Company.css";
 import DropDown from "../DropDown/DropDown";
+import company from "../../utils/company";
 
 function Company({ isOpen, onOpen, onOptionClick }) {
-  const options = ["History", "Our Team", "Blog"];
+  const options = company;
   return (
     <div className="company">
       <DropDown
         title="Company"
-        itemClassname=""
         options={options}
         isOpen={isOpen}
         onOpen={onOpen}

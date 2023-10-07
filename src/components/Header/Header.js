@@ -7,15 +7,13 @@ import Navigation from "../Navigation/Navigation";
 function Header() {
   const [isBurger, setIsBurger] = useState(false);
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("Sans Serif");
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleOptionClick = (option) => {
-    setSelectedOption(option);
+  const handleOptionClick = () => {
     setIsOpen(false);
   };
 
@@ -32,18 +30,18 @@ function Header() {
   return (
     <header className="header">
       <img className="header__logo" src={logo} alt="logo" />
-      <Navigation
-        isOpen={isOpen}
-        onOpen={handleOpen}
-        onOptionClick={handleOptionClick}
-        selectedOption={selectedOption}
-      />
+      <nav className="header__navigation">
+        <Navigation
+          isOpen={isOpen}
+          onOpen={handleOpen}
+          onOptionClick={handleOptionClick}
+        />
+      </nav>
       <div className="header__burger" onClick={handleBurgerMenu}></div>
       <Navbar
         isOpen={isOpen}
         onOpen={handleOpen}
         onOptionClick={handleOptionClick}
-        selectedOption={selectedOption}
         isNavbarOpen={isNavbarOpen}
         setIsNavbarOpen={setIsNavbarOpen}
       />
