@@ -15,7 +15,7 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/simple-mobilefirst-solution-to-react-component-using-flexbox-VdvdY-rbX_)
+- [Solution URL](https://www.frontendmentor.io/solutions/intro-section-react-component-with-dropdown-navigation-6uBx3nPam6)
 - [Live Site URL](https://intro-section-with-dropdown-navigation-main-roan-chi.vercel.app/)
 
 ### Built with
