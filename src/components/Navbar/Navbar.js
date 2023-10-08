@@ -1,14 +1,23 @@
 import Navigation from "../Navigation/Navigation";
 import "./Navbar.css";
 
-function Navbar({ isNavbarOpen, isOpen, onOpen, onOptionClick }) {
+function Navbar({
+  isNavbarOpen,
+  isFeaturesOpen,
+  isCompanyOpen,
+  onFeaturesOpen,
+  onCompanyOpen,
+  onOptionClick,
+}) {
   return (
     <div className={`navbar ${isNavbarOpen ? "navbar_opened" : ""}`}>
       <div className={"navbar__container"}>
         <nav className="navbar__navigation">
           <Navigation
-            isOpen={isOpen}
-            onOpen={onOpen}
+            isFeaturesOpen={isFeaturesOpen}
+            onFeaturesOpen={onFeaturesOpen}
+            isCompanyOpen={isCompanyOpen}
+            onCompanyOpen={onCompanyOpen}
             onOptionClick={onOptionClick}
           />
         </nav>

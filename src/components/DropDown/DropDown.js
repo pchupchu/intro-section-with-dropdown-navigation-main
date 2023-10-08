@@ -1,14 +1,24 @@
 import Option from "../Option/Option";
 import "./DropDown.css";
 
-const Dropdown = ({ title, options, isOpen, onOpen, onOptionClick }) => {
+const Dropdown = ({
+  title,
+  dropdownClassName,
+  options,
+  isOpen,
+  onOpen,
+  onOptionClick,
+}) => {
   return (
     <div className="dropdown">
-      <p className="dropdown__header" onClick={onOpen}>
+      <p
+        className={`dropdown__header ${isOpen ? "dropdown__header_close" : ""}`}
+        onClick={onOpen}
+      >
         {title}
       </p>
       {isOpen && (
-        <ul className="dropdown__options">
+        <ul className={`dropdown__options ${dropdownClassName}`}>
           {options.map(
             (option) => {
               return (

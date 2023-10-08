@@ -24,11 +24,12 @@
   }
 }
 
+.dropdown__header_close {
+  background-image: url('../../images/icon-arrow-up.svg');
+}
+
 .dropdown__options {
   background-color: var(--white);
-  /* position: absolute;
-  top: 100%;
-  right: 0; */
   width: 100%;
   min-width: 116px;
   box-sizing: border-box;
@@ -46,9 +47,18 @@
   .dropdown__options {
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 0;
     border-radius: 10px;
     box-shadow: var(--shadow);
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown__options_features {
+    left: auto;
+    right: 0;
+    min-width: 153px;
   }
 }
 

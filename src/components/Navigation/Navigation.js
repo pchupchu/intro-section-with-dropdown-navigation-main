@@ -3,21 +3,27 @@ import "./Navigation.css";
 import Features from "../Features/Features";
 import Company from "../Company/Company";
 
-function Navigation({ isOpen, onOpen, onOptionClick }) {
+function Navigation({
+  isFeaturesOpen,
+  isCompanyOpen,
+  onFeaturesOpen,
+  onCompanyOpen,
+  onOptionClick,
+}) {
   return (
-    <>
+    <div className="navigation">
       <ul className="navigation__menu">
         <li className="navigation__item">
           <Features
-            isOpen={isOpen}
-            onOpen={onOpen}
+            isFeaturesOpen={isFeaturesOpen}
+            onFeaturesOpen={onFeaturesOpen}
             onOptionClick={onOptionClick}
           />
         </li>
         <li className="navigation__item">
           <Company
-            isOpen={isOpen}
-            onOpen={onOpen}
+            isCompanyOpen={isCompanyOpen}
+            onCompanyOpen={onCompanyOpen}
             onOptionClick={onOptionClick}
           />
         </li>
@@ -43,7 +49,7 @@ function Navigation({ isOpen, onOpen, onOptionClick }) {
           Register
         </Link>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -7,17 +7,23 @@ import Navigation from "../Navigation/Navigation";
 function Header() {
   const [isBurger, setIsBurger] = useState(false);
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isFeaturesOpen, setIsFeaturesOpen] = useState(false);
+  const [isCompanyOpen, setIsCompanyOpen] = useState(false);
 
-  const handleOpen = () => {
-    setIsOpen(!isOpen);
+  const handleFeaturesOpen = () => {
+    setIsFeaturesOpen(!isFeaturesOpen);
+  };
+
+  const handleCompanyOpen = () => {
+    setIsCompanyOpen(!isCompanyOpen);
   };
 
   const handleOptionClick = () => {
-    setIsOpen(false);
+    setIsFeaturesOpen(false);
+    setIsCompanyOpen(false);
   };
 
-  function handleBurgerMenu() {
+  const handleBurgerMenu = () => {
     setIsBurger(!isBurger);
     setIsNavbarOpen(!isNavbarOpen);
     if (!isBurger) {
@@ -25,22 +31,26 @@ function Header() {
     } else {
       document.body.style.overflow = "";
     }
-  }
+  };
 
   return (
     <header className="header">
       <img className="header__logo" src={logo} alt="logo" />
       <nav className="header__navigation">
         <Navigation
-          isOpen={isOpen}
-          onOpen={handleOpen}
+          isFeaturesOpen={isFeaturesOpen}
+          isCompanyOpen={isCompanyOpen}
+          onFeaturesOpen={handleFeaturesOpen}
+          onCompanyOpen={handleCompanyOpen}
           onOptionClick={handleOptionClick}
         />
       </nav>
       <div className="header__burger" onClick={handleBurgerMenu}></div>
       <Navbar
-        isOpen={isOpen}
-        onOpen={handleOpen}
+        isFeaturesOpen={isFeaturesOpen}
+        isCompanyOpen={isCompanyOpen}
+        onFeaturesOpen={handleFeaturesOpen}
+        onCompanyOpen={handleCompanyOpen}
         onOptionClick={handleOptionClick}
         isNavbarOpen={isNavbarOpen}
         setIsNavbarOpen={setIsNavbarOpen}
