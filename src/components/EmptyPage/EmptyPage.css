@@ -1,9 +1,23 @@
 .empty-page {
   margin: 0 auto;
-  font-size: 74px;
+  font-size: 34px;
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .empty-page {
+    font-size: 45px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .empty-page {
+    font-size: 66px;
+  }
 }

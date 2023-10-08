@@ -19,7 +19,7 @@ function App() {
         <Route path="/history" element={<EmptyPage />} />
         <Route path="/ourteam" element={<EmptyPage />} />
         <Route path="/blog" element={<EmptyPage />} />
-        <Route path="/career" element={<EmptyPage />} />
+        <Route path="/careers" element={<EmptyPage />} />
         <Route path="/about" element={<EmptyPage />} />
       </Routes>
     </div>

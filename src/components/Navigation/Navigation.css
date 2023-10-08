@@ -44,6 +44,10 @@
   }
 }
 
+.navigation__link:hover {
+  color: var(--black);
+}
+
 .navigation__links {
   display: flex;
   flex-direction: column;
@@ -67,6 +71,10 @@
   line-height: 16px;
 }
 
+.navigation__auth-link:hover {
+  color: var(--black);
+}
+
 .navigation__auth-link_register {
   padding: 13px 0;
   box-sizing: border-box;
@@ -81,4 +89,9 @@
   .navigation__auth-link_register {
     width: 104px;
   }
+}
+
+.navigation__auth-link_register:hover {
+  color: var(--black);
+  border-color: var(--black);
 }

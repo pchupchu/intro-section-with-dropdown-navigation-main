@@ -9,6 +9,7 @@ function Navigation({
   onFeaturesOpen,
   onCompanyOpen,
   onOptionClick,
+  onClose,
 }) {
   return (
     <div className="navigation">
@@ -28,23 +29,24 @@ function Navigation({
           />
         </li>
         <li className="navigation__item">
-          <Link to="/careers" className="navigation__link">
+          <Link to="/careers" className="navigation__link" onClick={onClose}>
             Careers
           </Link>
         </li>
         <li className="navigation__item">
-          <Link to="/careers" className="navigation__link">
+          <Link to="/about" className="navigation__link" onClick={onClose}>
             About
           </Link>
         </li>
       </ul>
       <div className="navigation__links">
-        <Link to="/signin" className="navigation__auth-link">
+        <Link to="/signin" className="navigation__auth-link" onClick={onClose}>
           Login
         </Link>
         <Link
           to="/signup"
           className="navigation__auth-link navigation__auth-link_register"
+          onClick={onClose}
         >
           Register
         </Link>

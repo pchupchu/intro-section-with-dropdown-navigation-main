@@ -19,8 +19,13 @@ function Header() {
   };
 
   const handleOptionClick = () => {
+    setIsNavbarOpen(false);
     setIsFeaturesOpen(false);
     setIsCompanyOpen(false);
+  };
+
+  const closeNavbar = () => {
+    setIsNavbarOpen(false);
   };
 
   const handleBurgerMenu = () => {
@@ -45,7 +50,12 @@ function Header() {
           onOptionClick={handleOptionClick}
         />
       </nav>
-      <div className="header__burger" onClick={handleBurgerMenu}></div>
+      <div
+        className={`header__burger ${
+          isNavbarOpen ? "header__burger_active" : ""
+        }`}
+        onClick={handleBurgerMenu}
+      ></div>
       <Navbar
         isFeaturesOpen={isFeaturesOpen}
         isCompanyOpen={isCompanyOpen}
@@ -53,6 +63,7 @@ function Header() {
         onCompanyOpen={handleCompanyOpen}
         onOptionClick={handleOptionClick}
         isNavbarOpen={isNavbarOpen}
+        onClose={closeNavbar}
         setIsNavbarOpen={setIsNavbarOpen}
       />
     </header>
